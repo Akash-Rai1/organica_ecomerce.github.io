@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+    /* outline: 1px #13ac65 solid; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6 {
+    color: #d8d8d8;
+}
+
+hr {
+    width: 30px;
+    height: 2px;
+    background-color: #fb774b;
+}
+/* navbar starts here */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 4rem;
+    background-color: #d9f7e8;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* background-color: rgb(225, 250, 215); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    position: relative;
+}
+#logo {
+    font-size: xx-large;
+    color: #357d5c;
+}
+ul {
+    list-style: none;
+}
+.icon {
+    display: none;
+}
+section a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    padding: 0 0.5rem;
+}
+ul a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    padding: 0 0.7rem;
+    transition: 0.4s ease;
+}
+ul a:hover {
+    color: #13ac65;
+}
+ul a.active {
+    color: #13ac65;
+}
+ul a.active::after,
+ul a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #13ac65;
+    position: absolute;
+    bottom: -4px;
+    left: 0.7rem;
+}
+/* navbar ends here */
+#main_display {
+    background-image: url("images/pineapples-g4492beeac_1920.jpg");
+    height: 90vh;
+    width: 100vw;
+    background-position: top 50% left 1%;
+    background-size: cover;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.left-alligning {
+    padding-left: 61vw;
+    text-align: left;
+}
+.left-alligning h4 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+.left-alligning h1 {
+    padding: 0.5rem 0;
+    font-size: 2.7rem;
+}
+.left-alligning h2 {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+}
+.left-alligning button {
+    background-image: url(images/button.png);
+    background-color: transparent;
+    color: #13ac65;
+    border: 0;
+    margin-top: 0.9rem;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1rem;
+}
+/* features section starts here */
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 4rem;
+    margin: 1rem;
+  }
+  #features h2 {
+    font-size: medium;
+    text-align: center;
+    background-color: rgb(131, 208, 208);
+    padding: 2px;
+    border-radius: 3px;
+    margin: 2px;
+  }
+  #features div {
+  border-radius: 12px;
+    border: 0.7px solid rgb(27, 27, 27);
+    box-shadow: 5px 10px 18px #1a1a1a;
+    padding: 0 2px 10px 2px;
+    margin: 1rem;
+}
+#features div:nth-child(2) h2 {
+    background-color: #13ac65;
+}
+#features div:nth-child(3) h2 {
+    background-color: #7ad31a;
+}
+#features div:nth-child(4) h2 {
+    background-color: #7079e7;
+}
+#features div:nth-child(5) h2 {
+    background-color: #f46380;
+}
+.free-ship {
+    width: 9rem;
+}
+/* product section start here */
+#products {
+    padding: 10rem 0;
+    text-align: center;
+}
+#products h2{
+  margin: 1rem;
+font-size: 2rem;
+color: green;
+}
+#products p{
+  font-size: 01.3em;
+color: orangered;
+}
+.conatiner {
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+    position: relative;
+    left: 9vw;
+}
+.add-to-cart-btn {
+    position: absolute;
+    top: 89%;
+    left: 80%;
+    border-radius: 50%;
+    background-color: #6bcd47;
+    color: #000;
+    width: 3rem;
+    height: 3rem;
+    font-size: 21px;
+}
+.prdtdiv {
+    margin: 1rem;
+    width: 18rem;
+    height: 28rem;
+    padding: 1rem;
+    border: 1px solid #72a845;
+    box-shadow: 3px 6px 20px #fa919191;
+    position: relative;
+    border-radius: 12px;
+}
+.prdtdiv h1 {
+    font-size: x-large;
+    font-weight: 700;
+    color: red;
+    margin: 1rem;
+}
+.prdtdiv h3 {
+    color: goldenrod;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.prdtdiv h2 {
+    color: #13ac65;
+}
+.prdct-img {
+    width: 16rem;
+    border-radius: 12px;
+    height: 13rem;
+}
+#banner {
+    background-image: url(images/mediterranean-cuisine-g9d8ce6564_1920.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0b0332;
+    font-size: xx-large;
+    text-shadow: aliceblue;
+    font-weight: bolder;
+    margin: 1rem 0;
+    padding-top: 6rem;
+}
+#banner button {
+    border-radius: 12px;
+    padding: 0.5rem 3rem;
+    margin: 1rem 0;
+    background-color: #6bcd47;
+    border: 1px solid #3a7624;
+    font-size: 1.5rem;
+    color: #f9f9fa;
+    font-weight: 500;
+}
+.deals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+
+.sum-deal {
+    background-image: url(images/beach-ga56cf8234_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 32vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: aqua;
+}
+.sum-deal p {
+    margin: 0.66rem;
+    color: #171616;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.sum-deal button {
+    padding: 0.5rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: blue;
+}
+.spe-deal {
+    background-image: url(images/beach-g8139e67c0_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 32vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #148484;
+}
+.spe-deal p {
+    color: #0b0332;
+    margin: 0.66rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.spe-deal button {
+    padding: 0.5rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: blue;
+}
+#banner2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/cabbage-g33bfe31d4_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #000;
+    height: 25vh;
+    margin-bottom: 2rem;
+    color: #ae9cae;
+    text-align: center;
+    padding: 4vw;
+}
+
+.newstext {
+    width: 50vw;
+}
+
+.form input {
+    padding: 0.5rem 4rem;
+    border-radius: 2px;
+    font-size: unset;
+    color: black;
+    margin-right: 0;
+    position: relative;
+    left: 3px;
+}
+.form button {
+    padding: 0.5rem 1rem;
+    font-size: unset;
+    margin-left: 0;
+    background-color: skyblue;
+    color: black;
+    font-weight: 500;
+}
+footer {
+    background-color: #72a845;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+@media screen and (max-width: 850px) {
+  .body{
+    background-color: #000;
+  }
+    .icon {
+        color: #38251f;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-right: 5vw;
+        background-color: #976353;
+    }
+    #navbar {
+        list-style: none;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        background-color:#bee3a0 ;
+        left: 0;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+    }
+    #navbar li{
+      margin: 1rem ;
+
+    }
+    .left-alligning {
+      padding: 0;
+
+      position: relative;
+      top: -9rem;
+    }
+    .left-alligning h1 {
+
+      font-size: 1.8rem;
+    }
+    #banner button {
+      border-radius: 12px;
+      padding: 0.5rem 3rem;
+      margin: 1rem 0;
+        margin-bottom: 1rem;
+      background-color: #6bcd47;
+      border: 1px solid #3a7624;
+      font-size: 1.5rem;
+      color: #f9f9fa;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      position: relative;
+      bottom: 2vh;
+    }
+    .prdtdiv {
+      margin: 1rem;
+      width: 22rem;
+      height: 32rem;
+      padding: 1rem;
+      border: 1px solid #72a845;
+      box-shadow: 3px 6px 20px #fa919191;
+      position: relative;
+      border-radius: 12px;
+    }
+    .deals {
+      display: block;
+    
+      margin-bottom: 4rem;
+      text-align: center;
+      padding-left: 10vw;
+    }
+    .sum-deal {
+      background-image: url(images/beach-ga56cf8234_1920.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 74vw;
+      height: 55vw;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: aqua;
+      margin: 1rem;
+    }
+    .spe-deal {
+      background-image: url(images/beach-g8139e67c0_1920.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 75vw;
+      height: 46vw;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: #148484;
+      margin: 1rem;
+    }
+}

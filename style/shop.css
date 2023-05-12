@@ -1,0 +1,15 @@
+#pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+}
+#pages button{
+    background-color: green;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 12px;
+    
+}

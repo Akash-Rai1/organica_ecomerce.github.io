@@ -1,0 +1,11 @@
+td img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+table{
+    height: 100vh;
+    
+}
+tr{
+    margin: 1rem 0 1rem 1rem;
+}
